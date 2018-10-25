@@ -1,7 +1,5 @@
 
-main: main.o
-	g++ main.o -o main
-main.o: main.cpp
-	g++ -c main.cpp
+main: main.cpp
+	g++ main.cpp -o mcache
 clean:
-	rm *.o;rm main;
+	-rm *.o;-rm mcache;
